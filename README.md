@@ -5,7 +5,7 @@ This Jupyter Notebook uses a combination of OCR, computer vision techniques, reg
 
 ### Assumptions
 Several key assumptions have been made from observations on the supplied sample data set.
-- 
+![Layout Diagram](https://github.com/franna-cotta/creditsafe-application/blob/main/images/Layout_Example.jpg)
 
 ## Requirements
 This notebook requires Jupyter Notebook, Python 3.10+, Ghostscript, Tesseract OCR all to be installed on the local machine.
