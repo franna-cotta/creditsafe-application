@@ -13,6 +13,7 @@ Several key assumptions have been made from observations on the supplied sample 
 - Cyan: Middle header
 - Pink: Middle information
 - Yellow: Lower (body) text
+
 It is assumed this style of layout is approximately the same throughout different languages and varieties of documents, and this assumption is used as the basis for the application of image processing techniques to isolate specific regions of text.
 
 Other assumptions made include the existence of semicolons in the header regions, used to demarcate the separation between headers and information. The assumption that this is true for all of the headers in the blue region has not been made, as semicolon dividers were missing from the address section for several sample documents. However, it has been assumed they exist for at least *some* of the headers. The order of data in the upper headers and information section is also assumed to be fixed, independence of language and document type.
