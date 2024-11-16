@@ -25,10 +25,11 @@ This notebook requires Jupyter Notebook, Python 3.10+, Ghostscript, Tesseract OC
 - Python (https://www.python.org/)
 - Ghostscript (https://www.ghostscript.com/)
 - Tesseract OCR (https://github.com/tesseract-ocr/tesseract)
+
 Additionally, an API Key for the Hugging Face platform (https://huggingface.co/) is required. The software will initially look for this under the *HUGGINGFACE_API_TOKEN* environment variable and will prompt the user for manual entry if this is not found.
 
 ## Running
-To run the solution, open the main notebook with Jupyer and execute all the cells in sequential order using the command *Run -> Run All Cells*. Ensure
+To run the solution, open the main notebook with Jupyer and execute all the cells in sequential order using the command *Run -> Run All Cells*. This will install any additional Python libraries required and run the code. The data to be processed should be placed in a folder called *Data* in the same directory as the notebook.
 
 ## Authors
 - Francesca Carter (https://github.com/franna-cotta/)
