@@ -3,15 +3,18 @@
 ## Description
 This Jupyter Notebook uses a combination of OCR, computer vision techniques, regex, and generative AI to provide a general-purpose solution to the problem of scanning multilingual documents in English, French, Dutch, or German from the Belgian Gazette Service and extracting information from the text therein.
 
-### Assumptions
-Several key assumptions have been made from observations on the supplied sample data set about the layout of the documents, which it is assumed is approximately the same throughout different languages and types of documents. This layout assumption is summarized in the following image:
+### Data Assumptions
+Several key assumptions have been made from observations on the supplied sample data set about the layout of the documents, described in the following image:
 ![Layout Diagram](https://github.com/franna-cotta/creditsafe-application/blob/main/images/Layout_Example.jpg)
-- Red: Border region, ignored and cropped out
-- Blue: Upper text headers
-- Green: Upper text
-- Cyan: Middle text headers
-- Pink: Middle text
+- Red: Border region, (assumed) irrelevant
+- Blue: Upper headers
+- Green: Upper information
+- Cyan: Middle header
+- Pink: Middle information
 - Yellow: Lower (body) text
+It is assumed this style of layout is approximately the same throughout different languages and varieties of documents, and this assumption is used as the basis for the application of image processing techniques to isolate specific regions of text.
+
+Other assumptions made include the existence of semicolons in the header regions, used to demarcate the separation between headers and information. The assumption that this is true for all of the headers in the blue region has not been made, as semicolon dividers were missing from the address section for several sample documents. However, it has been assumed they exist for at least *some* of the headers. The order of data in the upper headers and information section is also assumed to be fixed, independence of language and document type.
 
 ## Requirements
 This notebook requires Jupyter Notebook, Python 3.10+, Ghostscript, Tesseract OCR all to be installed on the local machine.
