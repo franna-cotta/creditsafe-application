@@ -5,6 +5,7 @@ This Jupyter Notebook uses a combination of OCR, computer vision techniques, reg
 
 ### Data Assumptions
 Several key assumptions have been made from observations on the supplied sample data set about the layout of the documents, described in the following image:
+
 ![Layout Diagram](https://github.com/franna-cotta/creditsafe-application/blob/main/images/Layout_Example.jpg)
 - Red: Border region, (assumed) irrelevant
 - Blue: Upper headers
